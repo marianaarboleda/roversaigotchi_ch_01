@@ -1,10 +1,11 @@
 {
-    "name": "roversaigotchi_lvl1",
+    "name": "roversaigotchi_lvl1_teachers",
     "description": "",
     "dependencies": {
         "core": "*",
         "radio": "*",
-        "microphone": "*"
+        "microphone": "*",
+        "roversa": "github:eb8ga/pxt-roversa-2#v1.0.29"
     },
     "files": [
         "main.blocks",
@@ -15,7 +16,7 @@
         "test.ts"
     ],
     "targetVersions": {
-        "target": "8.0.18",
+        "target": "8.0.21",
         "targetId": "microbit"
     },
     "supportedTargets": [
