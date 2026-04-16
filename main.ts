@@ -1,18 +1,16 @@
-/**
- * ## Challenge documentation
- * 
- * Forward - food
- * 
- * Backward - sleep
- * 
- * Right - exercise or dance
- * 
- * Left - send a message to a friend
- * 
- * ## Delete before sharing with students
- * 
- * In this challenge our pet needs movement to feel better. Trying to sleep will make it worse.
- */
+// ## Challenge documentation
+// 
+// Forward - food
+// 
+// Backward - sleep
+// 
+// Right - exercise or dance
+// 
+// Left - send a message to a friend
+// 
+// ## Delete before sharing with students
+// 
+// In this challenge our pet needs movement to feel better. Trying to sleep will make it worse.
 roversa.onEvent(RoversaPin.P13, RoversaEvent.Click, function () {
     executing_function = true
     basic.showLeds(`
@@ -26,9 +24,7 @@ roversa.onEvent(RoversaPin.P13, RoversaEvent.Click, function () {
     music._playDefaultBackground(music.builtInPlayableMelody(Melodies.Dadadadum), music.PlaybackMode.UntilDone)
     executing_function = false
 })
-/**
- * use button B to see happiness level
- */
+// use button B to see happiness level
 input.onButtonPressed(Button.B, function () {
     basic.showNumber(wellbeing)
 })
@@ -53,6 +49,7 @@ roversa.onEvent(RoversaPin.P15, RoversaEvent.Click, function () {
  */
 let executing_function = false
 let wellbeing = 0
+let time = 0
 basic.showLeds(`
     . . . . .
     . # . # .
@@ -60,7 +57,6 @@ basic.showLeds(`
     . # # # .
     . . . . .
     `)
-let time = 0
 wellbeing = 50
 basic.forever(function () {
     while (executing_function == false) {
